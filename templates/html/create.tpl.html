@@ -1,0 +1,169 @@
+<div class="create">
+    <h2>将你的表白添加到我们的网站存档</h2>
+    <div class="create-form">
+        <form id="data-form" action="functions/submitConfession.php" method="post">
+            <section class="form-container container">
+                <main class="main form-sender">
+                    <h4>在此处输入您的昵称</h4>
+                    <input placeholder="📝 昵称" class="input-sender" id="input-sender"/>
+                </main>
+
+                <main class="main form-recipient">
+                    <h4>在此处输入对方的昵称</h4>
+                    <input placeholder="💌 昵称" class="input-recipient" id="input-sender"/>
+                </main>
+            </section>
+
+            <main class="main content">
+                <h4>在这里输入你想对对方说的话</h4>
+                <textarea class="input-content" id="input-content"></textarea>
+                <br>
+                <span class="notice">在确认您要提交并保存到我们的网站存档之前，请确认所有信息均为正确，一旦提交后您将不能修改所有信息。如果您提交了错误的信息，请向我们发送有关邮件并指出要删除的存档。</span>
+            </main>
+            <br>
+            <input class="form-submitButton" type="button" onclick="submitConfession(
+                document.getElementsByClassName('input-sender')[0].value,
+                document.getElementsByClassName('input-recipient')[0].value,
+                document.getElementsByClassName('input-content')[0].value
+            )" value="提 交">
+        </form>
+    </div>
+    <!-- 数据提交状态显示位 -->
+    <div class="status-displayer" id="status-displayer"></div>
+</div>
+
+<style>
+    @keyframes bounceInRight {
+        from, to {
+            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+        0% {
+            opacity: 0;
+            right: -255px;
+        }
+        100% {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    .create {
+        line-height: 1.5;
+    }
+
+    .form-container {
+        padding: 0;
+    }
+
+    .form-sender, .form-recipient, .form-content {
+        border: #ddd dashed 1px;
+        line-height: 1.5;
+        margin-top: 10px;
+	    box-sizing: border-box
+    }
+
+    .form-sender {
+        margin-right: 5px;
+    }
+
+    .form-recipient {
+        margin-left: 5px;
+    }
+
+    .input-sender, .input-recipient {
+        border-radius: 0;
+        -webkit-appearance: none;
+        background-color: #fff;
+        border: 1px solid  #DCDFE6;
+        box-sizing: border-box;
+        color: #606266;
+        display: inline-block;
+        font-size: .8rem;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 15px;
+        transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+        width: 100%;;
+    }
+
+    .form-submitButton {
+        color: #fff;
+        background-color: #f60c3e;
+        border-radius: 0;
+        transition: all .5s;
+        width: 40%;
+        display: inline-block;
+        line-height: 1;
+        white-space: nowrap;
+        cursor: pointer;
+        -webkit-appearance: none;
+        text-align: center;
+        box-sizing: border-box;
+        outline: 0;
+        margin: 0;
+        font-weight: 500;
+        padding: 12px 20px;
+        font-size: 14px;
+        border: 1px #f60c3e;
+    }
+
+    .form-submitButton:hover {
+        box-shadow: #333333 0 0 3px;
+        transition: all .5s;
+    }
+
+    .notice {
+        color: #bbb;
+        font-size: .8rem;
+        margin-top: 10px;
+    }
+
+    .content {
+        border: #ddd dashed 1px;
+        margin-top: 10px;
+        line-height: 1.5;
+    }
+
+    .input-content {
+        min-height: 222px;
+        height: 222px;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        border: #ddd solid 1px;
+        display: block;
+        resize: vertical;
+        padding: 5px 15px;
+        line-height: 1.5;
+        box-sizing: border-box;
+        font-size: .8rem;
+        color: #606266;
+        background-color: #FFF;
+        transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+        border-radius: 0;
+    }
+
+    .input-sender:focus, .input-recipient:focus, .input-content:focus {
+        border-color: #f60c3e;
+        outline: 0;
+    }
+
+    .status-displayer {
+	    height: 120px;
+        width: 250px;
+        background-color: #FFF;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        display: none;
+        box-shadow: #bbb 2px 2px 4px 1px;
+        border-radius: 4px;
+    }
+
+    .status-title {
+        color: #303133;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 1px;
+    }
+</style>
