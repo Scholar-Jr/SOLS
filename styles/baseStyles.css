@@ -1,12 +1,16 @@
+/* 字体配置 */
 * {
-    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    /*font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;*/
+    font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+
 }
 
+/* 选择背景色 */
 ::selection {
     color: #ffffff;
     background-color: #f60c3e;
 }
 
-/* Do not display scroll bar */
+/* 在受到支持的浏览器中隐藏滑块 */
 .aside::-webkit-scrollbar { width: 0; }
 .main::-webkit-scrollbar { width: 0; }

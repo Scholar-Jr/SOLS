@@ -1,7 +1,7 @@
 <div class="create">
     <h2>将你的表白添加到我们的网站存档</h2>
     <div class="create-form">
-        <form id="data-form" action="functions/submitConfession.php" method="post">
+        <form id="data-form" action="./functions/submitConfession.php" method="post">
             <section class="form-container container">
                 <main class="main form-sender">
                     <h4>在此处输入您的昵称</h4>
@@ -10,7 +10,7 @@
 
                 <main class="main form-recipient">
                     <h4>在此处输入对方的昵称</h4>
-                    <input placeholder="💌 昵称" class="input-recipient" id="input-sender"/>
+                    <input placeholder="💌 昵称" class="input-recipient" id="input-recipient"/>
                 </main>
             </section>
 
@@ -28,25 +28,9 @@
             )" value="提 交">
         </form>
     </div>
-    <!-- 数据提交状态显示位 -->
-    <div class="status-displayer" id="status-displayer"></div>
 </div>
 
 <style>
-    @keyframes bounceInRight {
-        from, to {
-            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-        }
-        0% {
-            opacity: 0;
-            right: -255px;
-        }
-        100% {
-            opacity: 1;
-            transform: none;
-        }
-    }
-
     .create {
         line-height: 1.5;
     }
@@ -146,24 +130,5 @@
     .input-sender:focus, .input-recipient:focus, .input-content:focus {
         border-color: #f60c3e;
         outline: 0;
-    }
-
-    .status-displayer {
-	    height: 120px;
-        width: 250px;
-        background-color: #FFF;
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        display: none;
-        box-shadow: #bbb 2px 2px 4px 1px;
-        border-radius: 4px;
-    }
-
-    .status-title {
-        color: #303133;
-        font-size: 16px;
-        font-weight: 700;
-        margin-top: 1px;
     }
 </style>

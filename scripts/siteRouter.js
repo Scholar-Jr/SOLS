@@ -1,8 +1,8 @@
 angular.module('sols', ['ngRoute'])
-.config(function ($routeProvider) {
-    $routeProvider
-        .when('/archives', { templateUrl: './templates/php/archives.tpl.php' })
-        .when('/create', { templateUrl: './templates/html/create.tpl.html' })
-        .when('/help', { templateUrl: './templates/html/help.tpl.html' })
-        .otherwise({ redirectTo: '/archives' })
-})
+    .config(function ($routeProvider) {
+        $routeProvider
+            .when('/', {templateUrl: './templates/archives.tpl.php'})
+            .when('/create', {templateUrl: './templates/create.tpl.html'})
+            .when('/help', {templateUrl: './templates/help.tpl.html'})
+            .otherwise({redirectTo: '/'})
+    })

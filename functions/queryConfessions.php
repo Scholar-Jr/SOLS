@@ -3,9 +3,6 @@
 require_once "../classes/MySQLDatabaseControl.class.php";
 require_once './core/sqlExec.php';
 
-/* 储存传入的keyword */
-$keyword = $_POST['keyword'];
-
 /* 初始化数据库操控类服务函数集合对象 */
 $dbc = new MySQLDatabaseControl();
 
@@ -13,7 +10,7 @@ $dbc = new MySQLDatabaseControl();
 $connection = $dbc->openConnection();
 
 /* 合成SQL语句 */
-$command = "SELECT * FROM sol_confessions WHERE sender LIKE '%$keyword%' OR recipient LIKE '%$keyword%';";
+$command = "SELECT * FROM sol_confessions;";
 
 /* 执行SQL语句并返回JSON格式数据 */
 echo sqlExec($connection, $command);
