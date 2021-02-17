@@ -4,26 +4,41 @@
     flex: 1;
     flex-basis: auto;
     box-sizing: border-box;
-    min-width: 0;
-}
-
-.container {
     height: 100%;
     width: 100%;
     padding: .8rem;
 }
 
+.container-parent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 100%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.menu {
+    grid-area: 1 / 1 / 6 / 2;
+    display: contents;
+}
+
+.view {
+    grid-area: 1 / 2 / 6 / 6;
+    display: contents;
+}
+
 .aside {
-    width: 300px;
+    width: var(--max);
     overflow: auto;
     box-sizing: border-box;
     flex-shrink: 0;
-    background-color: #ffffff;
-    color: #333;
+    background-color: var(--extra-color);
+    color: var(--text-color);
     text-align: center;
     line-height: 200px;
-    padding: 20px;
-    border-right: #ddd dashed 1px;
+    padding: var(--default-padding);
+    border-right: var(--border-color) dashed var(--border-size);
 }
 
 .main {
@@ -32,23 +47,19 @@
     flex-basis: auto;
     overflow: auto;
     box-sizing: border-box;
-    padding: 20px;
-    background-color: #ffffff;
-    color: #333;
+    padding: var(--default-padding);
+    background-color: var(--extra-color);
+    color: var(--text-color);
     text-align: center;
     line-height: 160px;
 }
 
 .footer {
-    padding: 0 20px;
     box-sizing: border-box;
     flex-shrink: 0;
-    height: 60px;
-    color: #333;
-    text-align: center;
-    font-size: .75rem;
-    margin: 0 0 5rem;
-    line-height: 1.65;
+    color: var(--text-color);
+    font-size: var(--menu-font-size);
+    line-height: var(--footer-line-height);
 }
 
 .side-follow {
@@ -69,12 +80,11 @@
     line-height: 1;
     color: inherit;
     cursor: pointer;
-    font-size: .75rem;
+    font-size: var(--menu-font-size);
 }
 
 .side-follow a::before {
-    content: "▪︎";
-    margin-right: .2em;
-    color: #989898;
-    transition: all .12s cubic-bezier(0, .3, .8, 1);
+    content: var(--side-follow-content);
+    margin-right: var(--text-margin-right);
+    color: var(--icon-color);
 }

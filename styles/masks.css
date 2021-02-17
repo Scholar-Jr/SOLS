@@ -1,0 +1,38 @@
+.mask {
+    position:fixed;
+    z-index:999;
+    border:calc(var(--mask-width)/ 2) solid var(--primary-color);
+    background:var(--primary-color);
+    pointer-events:none;
+    border: 0;
+}
+.mb, .mt {
+    height:0;
+    width:100%;
+    left:0;
+}
+.mb {
+    bottom:0;
+    height:var(--mask-width);
+}
+.mt {
+    top:0;
+    height:var(--mask-width);
+}
+.mv {
+    bottom:0;
+    height:80vh;
+    width:0;
+}
+.ml, .ml2 {
+    left:0;
+    width:var(--mask-width);
+}
+.mr, .mr2 {
+    right:0;
+    width:var(--mask-width);
+}
+.ml2, .mr2 {
+    bottom:none;
+    top:0;
+}

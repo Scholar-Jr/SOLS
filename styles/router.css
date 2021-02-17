@@ -1,0 +1,21 @@
+.router-animated {
+    transition: all .3s ease-in-out;
+}
+
+.router-animated.ng-enter {
+    opacity: 0;
+}
+
+.router-animated.ng-enter-active {
+    opacity: 1;
+    overflow: hidden;
+}
+
+.router-animated.ng-leave {
+    opacity: 1;
+    overflow: hidden;
+}
+
+.router-animated.ng-leave-active {
+    opacity: 0;
+}

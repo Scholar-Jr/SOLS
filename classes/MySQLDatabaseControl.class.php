@@ -11,8 +11,8 @@ class MySQLDatabaseControl
         $MySQLAccount = array(
             "hostname" => "localhost",
             "username" => "root",
-            "password" => "qq840819",
-            "database" => "sol"
+            "password" => "",
+            "database" => ""
         );
 
         /* 建立连接 */

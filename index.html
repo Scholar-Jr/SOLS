@@ -7,29 +7,45 @@
 
     <script src="https://cdn.bootcss.com/angular.js/1.7.0/angular.min.js"></script>
     <script src="https://cdn.bootcss.com/angular.js/1.7.0/angular-route.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/angular-animate/1.8.2/angular-animate.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./scripts/siteRouter.js"></script>
     <script src="./scripts/submitControl.js"></script>
     <script src="./scripts/dataProcessor.js"></script>
 
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="./styles/baseStyles.css">
-    <link rel="stylesheet" href="./styles/componentStyles.css">
-    <link rel="stylesheet" href="./styles/siteMenu.css">
-    <link rel="stylesheet" href="./styles/outBorder.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/component.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/masks.css">
+    <link rel="stylesheet" href="./styles/menu.css">
+    <link rel="stylesheet" href="./styles/router.css">
 
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 </head>
 
 <body ng-app="sols">
+<div class="mask mt"></div>
+<div class="mask mb"></div>
+<div class="mask mv ml"></div>
+<div class="mask mv mr"></div>
+<div class="mask mv ml2"></div>
+<div class="mask mv mr2"></div>
 <section class="container">
-    <aside class="aside">
-        <ng-include src="'./components/logo.cpt.html'"></ng-include>
-        <ng-include src="'./components/intro.cpt.html'"></ng-include>
-        <ng-include src="'./components/menu.cpt.html'"></ng-include>
-        <ng-include src="'./components/copyright.cpt.html'"></ng-include>
-    </aside>
-    <main class="main" ng-view="archives"></main>
+    <div class="container-parent">
+        <div class="menu">
+            <aside class="aside">
+                <ng-include src="'./components/logo.cpt.html'"></ng-include>
+                <ng-include src="'./components/intro.cpt.html'"></ng-include>
+                <ng-include src="'./components/menu.cpt.html'"></ng-include>
+                <ng-include src="'./components/copyright.cpt.html'"></ng-include>
+            </aside>
+        </div>
+
+        <div class="view">
+            <main class="main router-animated" ng-view="archives"></main>
+        </div>
+    </div>
 </section>
 </body>
 </html>

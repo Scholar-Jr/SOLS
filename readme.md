@@ -23,7 +23,7 @@
 
 ```
 CREATE TABLE `sol_confessions` (
-  `cid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `cid` int unsigned NOT NULL AUTO_INCREMENT,
   `sender` varchar(40) NOT NULL,
   `recipient` varchar(40) NOT NULL,
   `content` varchar(255) NOT NULL,
@@ -41,4 +41,3 @@ CREATE TABLE `sol_confessions` (
 ## 设计灵感
 
 [Anyway.FM](https://anyway.fm)
-

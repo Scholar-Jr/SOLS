@@ -1,0 +1,16 @@
+* { font-family: var(--default-font-family); }
+
+::selection {
+    color: var(--extra-color);
+    background-color: var(--primary-color);
+}
+
+.aside::-webkit-scrollbar, .main::-webkit-scrollbar { width: var(--zero); }
+
+html, body {
+    padding: var(--zero);
+    margin: var(--zero);
+    height: var(--max);
+    scroll-behavior: smooth;
+    overflow: hidden;
+}

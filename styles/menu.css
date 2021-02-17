@@ -1,12 +1,12 @@
 .logo {
     font-size: 120px;
-    transition: all 0.2s;
+    transition: all 0.5s cubic-bezier(.4,0,.2,1);;
     height: 165px;
 }
 
 .logo:hover {
-    transform: scale(1.1, 1.1);
-    transition: all 0.2s;
+    transform: rotate(30deg) scale(1.15);
+    transition: all 0.5s cubic-bezier(.4,0,.2,1);;
 }
 
 .intro {
@@ -58,14 +58,14 @@
     height: 26px;
     line-height: 1.2rem;
     letter-spacing: .05em;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 13px;
 }
 
 .menu-label {
     text-align: left;
     margin-top: 20px;
-    color: #f60c3e;
+    color: var(--primary-color);
     font-weight: 700;
-    font-size: .75rem;
+    font-size: var(--menu-font-size);
 }
