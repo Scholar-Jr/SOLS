@@ -1,0 +1,12 @@
+.help {
+    line-height: 1.5;
+}
+
+.help-title {
+    text-align: left;
+}
+
+.help-content {
+    font-size: .8rem;
+    text-align: left;
+}

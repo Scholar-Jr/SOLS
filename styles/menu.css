@@ -1,19 +1,22 @@
 .logo {
     font-size: 120px;
-    transition: all 0.5s cubic-bezier(.4,0,.2,1);;
-    height: 165px;
+    height: 145px;
 }
 
-.logo:hover {
-    transform: rotate(30deg) scale(1.15);
+.logo img {
+    transition: all 0.5s cubic-bezier(.4,0,.2,1);;
+}
+
+.logo img:hover {
+    transform: scale(1.15);
     transition: all 0.5s cubic-bezier(.4,0,.2,1);;
 }
 
 .intro {
     line-height: 1.5;
-    font-size: .875rem;
-    font-weight: 700;
-    text-align: left;
+    font-size: 1.05rem;
+    font-weight: 800;
+    text-align: center;
     margin: 0 auto 2rem;
     width: 200px;
 }
@@ -25,8 +28,12 @@
 
 .menu ul {
     list-style: none;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.menu ul li.menu-switcher {
+    display: table;
 }
 
 .menu-option {
@@ -39,6 +46,7 @@
     font-weight: 400;
     color: inherit;
     cursor: pointer;
+    outline: none;
 }
 
 .menu-option:hover {
@@ -47,10 +55,10 @@
 }
 
 .menu-icon {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     position: relative;
-    top: -.1em;
+    top: -.08em;
 }
 
 .menu-text {
@@ -59,13 +67,13 @@
     line-height: 1.2rem;
     letter-spacing: .05em;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .menu-label {
     text-align: left;
     margin-top: 20px;
-    color: var(--primary-color);
+    color: #f60c3e;
     font-weight: 700;
-    font-size: var(--menu-font-size);
+    font-size: .75rem;
 }

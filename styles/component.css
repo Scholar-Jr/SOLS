@@ -29,16 +29,16 @@
 }
 
 .aside {
-    width: var(--max);
+    width: 100%;
     overflow: auto;
     box-sizing: border-box;
     flex-shrink: 0;
-    background-color: var(--extra-color);
-    color: var(--text-color);
+    background-color: #ffffff;
+    color: #333333;
     text-align: center;
     line-height: 200px;
-    padding: var(--default-padding);
-    border-right: var(--border-color) dashed var(--border-size);
+    padding: 20px;
+    border-right: #eeeeee dashed 1px;
 }
 
 .main {
@@ -47,9 +47,9 @@
     flex-basis: auto;
     overflow: auto;
     box-sizing: border-box;
-    padding: var(--default-padding);
-    background-color: var(--extra-color);
-    color: var(--text-color);
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333333;
     text-align: center;
     line-height: 160px;
 }
@@ -57,9 +57,10 @@
 .footer {
     box-sizing: border-box;
     flex-shrink: 0;
-    color: var(--text-color);
-    font-size: var(--menu-font-size);
-    line-height: var(--footer-line-height);
+    color: rgba(95, 80, 80, 0.459);
+    font-size: .7rem;
+    line-height: 1.65;
+    font-weight: 600;
 }
 
 .side-follow {
@@ -80,11 +81,12 @@
     line-height: 1;
     color: inherit;
     cursor: pointer;
-    font-size: var(--menu-font-size);
+    font-size: .75rem;
+    font-style: italic;
 }
 
 .side-follow a::before {
-    content: var(--side-follow-content);
-    margin-right: var(--text-margin-right);
-    color: var(--icon-color);
+    content: "▪︎";
+    margin-right: .2em;
+    color: #989898;
 }

@@ -29,7 +29,7 @@ CREATE TABLE `sol_confessions` (
   `content` varchar(255) NOT NULL,
   `date` date DEFAULT NULL,
   PRIMARY KEY (`cid`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
 
 其中已经限定了数据库名称为sol，如果你需要对其作出更改，请修改MySQL配置文件```classes/MySQLDatabaseControl.class.php```。

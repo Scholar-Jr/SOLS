@@ -1,0 +1,117 @@
+.archives {
+    height: 96%;
+    line-height: 1.5;
+}
+
+.archives-confessions {
+    border-bottom: #ddd dashed 1px;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.archives-confessions h2 {
+    display: block;
+    padding: 1px;
+    margin-bottom: 5px;
+}
+
+#confessions-area {
+    color: #4b4b4b;
+}
+
+.confession-name {
+    padding: 2px 3px;
+    transition: color .5s;
+    border-bottom: #bbb dashed 1px;
+}
+
+.confession-name:hover {
+    background-color: #f60c3e;
+    color: #fff;
+    border-radius: 4px;
+    transition: color .2s;
+}
+
+.main {
+    color: #333;
+    text-align: center;
+    line-height: 160px;
+}
+
+.quotation-mark {
+    fill: #ddd;
+    width: 20px;
+    display: inline-block;
+}
+
+.confession-content {
+    margin: 0 0 5px 0;
+    font-weight: 400;
+    font-size: .975rem;
+}
+
+.confession-time {
+    text-align: right;
+    font-size: 14px;
+    color: #999999;
+}
+
+.search {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: normal;
+    display: inline-table;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    position: relative;
+    font-size: 14px;
+}
+
+.search-input {
+    border-radius: 0;
+    vertical-align: middle;
+    display: table-cell;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    color: #606266;
+    font-size: inherit;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    padding: 0 15px;
+    transition: border-color .2s cubic-bezier(.645, .045, .335, 1);
+    width: 100%;
+}
+
+.search-box {
+    background-color: #f60c3e;
+    color: #fff;
+    border-radius: 0;
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    border: 1px solid #f60c3e;
+    padding: 0 20px;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.search-button {
+    color: inherit;
+    font-size: inherit;
+    display: inline-block;
+    margin: -10px -20px;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #f60c3e;
+    border: 1px solid #f60c3e;
+    text-align: center;
+    box-sizing: border-box;
+    outline: 0;
+    transition: .1s;
+    font-weight: 500;
+    padding: 0 20px;
+    height: 38px;
+}

@@ -1,8 +1,8 @@
 .mask {
     position:fixed;
     z-index:999;
-    border:calc(var(--mask-width)/ 2) solid var(--primary-color);
-    background:var(--primary-color);
+    border:calc(.8rem/ 2) solid #f60c3e;
+    background: #f60c3e;
     pointer-events:none;
     border: 0;
 }
@@ -13,11 +13,11 @@
 }
 .mb {
     bottom:0;
-    height:var(--mask-width);
+    height: .8rem;
 }
 .mt {
     top:0;
-    height:var(--mask-width);
+    height: .8rem;
 }
 .mv {
     bottom:0;
@@ -26,11 +26,11 @@
 }
 .ml, .ml2 {
     left:0;
-    width:var(--mask-width);
+    width: .8rem;
 }
 .mr, .mr2 {
     right:0;
-    width:var(--mask-width);
+    width: .8rem;
 }
 .ml2, .mr2 {
     bottom:none;
