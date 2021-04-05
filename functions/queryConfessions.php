@@ -1,4 +1,4 @@
-`<?php
+<?php
 // 导入已经封装函数
 require_once "../classes/MySQLDatabaseControl.class.php";
 require_once './core/sqlExec.php';
